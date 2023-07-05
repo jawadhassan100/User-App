@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+  </head>
+  <body class="bg-dark-subtle">
+    <br />
+    <main class="container text-center my-3">
+      <a class="btn btn-dark w-50 fw-bolder fst-italic">
+        <h3 class="fw-bold">Student Form</h3></a
+      >
+    </main>
+    <br /><br /><br />
+    <form class="container w-25" id="addForm">
+      <div class="mb-3 fw-bolder">
+        <label for="exampleInputEmail1" class="form-label"><h5>First Name</h5></label>
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="exampleInputText1"
+          aria-describedby="textHelp"
+          name="fname"
+          required
+        />
+      </div>
+      <div class="mb-3 fw-bolder">
+        <label for="exampleInputPassword1" class="form-label"><h5>Last Name</h5></label>
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="exampleInputText2"
+          name="lname"
+        />
+      </div>
+      <div class="mb-3 fw-bolder">
+        <label for="exampleInputPassword1" class="form-label"
+          ><h5>Roll Number</h5></label
+        >
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="exampleInputnumber3"
+          name="rollNo"
+        />
+      </div>
+      <div class="mb-3 fw-bolder">
+        <label for="exampleInputPassword1" class="form-label"><h5>Email</h5></label>
+        <input
+          type="email"
+          class="form-control form-control-lg"
+          id="exampleInputemail4"
+          name="email"
+        />
+      </div>
+      <button type="submit" class="btn btn-dark fw-bold" id="save">
+        Submit
+      </button>
+    </form>
+
+    <hr />
+    <table class=" table table-dark table-striped table-bordered border-light border-4">
+      <thead>
+    <tr>
+      <th scope="col">Roll No</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Button</th>
+    </tr>
+  </thead>
+      <tbody id="Tbody"></tbody>
+    </table>
+
+    <!-- Modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Modal title
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="container" id="editForm">
+              <div class="mb-3 fw-bolder">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Id</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-describedby="textHelp"
+                  name="stdId"
+                  id="stdEditId"
+                />
+              </div>
+              <div class="mb-3 fw-bolder">
+                <label for="exampleInputEmail1" class="form-label"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputText1"
+                  aria-describedby="textHelp"
+                  name="fname"
+                  required
+                />
+              </div>
+              <div class="mb-3 fw-bolder">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputText2"
+                  name="lname"
+                />
+              </div>
+              <div class="mb-3 fw-bolder">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Roll Number</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputnumber3"
+                  name="rollNo"
+                />
+              </div>
+              <div class="mb-3 fw-bolder">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputemail4"
+                  name="email"
+                />
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" class="btn btn-info fw-bold" id="save">
+              Save
+            </button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+   <script src="./bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
