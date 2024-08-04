@@ -1,8 +1,6 @@
 const { Router } = require("express");
-const { Error } = require("mongoose");
-const Post = require("../server side/models/post");
+const Post = require("../models/post");
 const route = Router();
-const axios = require("axios");
 
 //read
 route.get("/api/New", async (req, res) => {

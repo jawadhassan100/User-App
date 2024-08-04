@@ -19,7 +19,7 @@ async function Deletestd(_id) {
     method: "DELETE",
   });
   window.location.reload();
-  
+
   const deleteStd = await res.json();
   console.log(deleteStd);
 }
@@ -109,8 +109,6 @@ const send = async (data = {}) => {
   const returnData = await res.json();
   return returnData;
 };
-
-
 
 addForm.addEventListener("submit", newfunc);
 function newfunc(event) {
